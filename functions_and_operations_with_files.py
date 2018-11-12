@@ -54,8 +54,8 @@ while decision:
         student_id = int(input("Enter student ID: "))
         add_student(student_name, student_id)
         write_to_file(student_name)
-    if decision.upper() == "N":
+    elif decision.upper() == "N":
         print_students_title_case()
         break
-    if decision.upper() != "Y" and decision.upper() != "N":
+    else:
         print("Undefined answer")
