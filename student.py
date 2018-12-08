@@ -10,13 +10,15 @@ class Student:
 
     school_name = "Riverdale Elementary"
 
-    def __init__(self, name, student_id=0):
+    def __init__(self, name, last_name, student_id=0):
         """
         This is a constructor method, it's executed every time you create a new instance
         :param name: string - student name
+        :param last_name: string - student last name
         :param student_id: integer - optional student ID number
         """
         self.name = name
+        self.last_name = last_name
         self.student_id = student_id
         students.append(self)
 
